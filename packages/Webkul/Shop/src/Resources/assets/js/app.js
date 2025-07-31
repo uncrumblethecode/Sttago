@@ -3,6 +3,7 @@
  */
 import.meta.glob(["../images/**", "../fonts/**"]);
 
+
 /**
  * Main vue bundler.
  */

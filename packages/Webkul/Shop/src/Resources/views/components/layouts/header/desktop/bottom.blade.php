@@ -5,28 +5,35 @@
         This section will provide categories for the first, second, and third levels. If
         additional levels are required, users can customize them according to their needs.
     -->
+        
+
     <!-- Left Nagivation Section -->
-    <div class="flex items-center gap-x-10 max-[1180px]:gap-x-5">
+    <div class="flex items-center gap-x-5 max-[1180px]:gap-x-4">
         {!! view_render_event('bagisto.shop.components.layouts.header.desktop.bottom.logo.before') !!}
 
         <a
             href="{{ route('shop.home.index') }}"
             aria-label="@lang('shop::app.components.layouts.header.desktop.bottom.bagisto')"
         >
+            <!-- Light logo -->
             <img
-                src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg') }}"
-                width="131"
-                height="29"
+                src="{{ bagisto_asset('images/logo.svg') }}"
+                width="100"
+                height="25"
                 alt="{{ config('app.name') }}"
+               
             >
+
+            
         </a>
+
 
         {!! view_render_event('bagisto.shop.components.layouts.header.desktop.bottom.logo.after') !!}
 
         {!! view_render_event('bagisto.shop.components.layouts.header.desktop.bottom.category.before') !!}
 
         <v-desktop-category>
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-4 text-sm">
                 <span
                     class="shimmer h-6 w-20 rounded"
                     role="presentation"
@@ -288,7 +295,7 @@
                 <span>
                     <a
                         :href="category.url"
-                        class="inline-block px-5 uppercase"
+                        class="inline-block px-4 capitalize"
                     >
                         @{{ category.name }}
                     </a>
@@ -339,7 +346,7 @@
                     class="flex h-[77px] cursor-pointer items-center border-b-4 border-transparent hover:border-b-4 hover:border-navyBlue"
                     @click="toggleCategoryDrawer"
                 >
-                    <span class="flex items-center gap-1 px-5 uppercase">
+                    <span class="flex items-center gap-1 px-5 capitalize">
                         <span class="icon-hamburger text-xl"></span>
 
                         @lang('shop::app.components.layouts.header.desktop.bottom.all')
@@ -354,7 +361,7 @@
                     <span>
                         <a
                             :href="category.url"
-                            class="inline-block px-5 uppercase"
+                            class="inline-block px-4 capitalize"
                         >
                             @{{ category.name }}
                         </a>
