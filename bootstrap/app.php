@@ -18,6 +18,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        $middleware->validateCsrfTokens(except: [
+            '/phonepe/callback',
+        ]);
         /**
          * Remove the default Laravel middleware that prevents requests during maintenance mode. There are three
          * middlewares in the shop that need to be loaded before this middleware. Therefore, we need to remove this

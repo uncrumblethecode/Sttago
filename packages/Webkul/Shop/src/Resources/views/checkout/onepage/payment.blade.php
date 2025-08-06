@@ -66,6 +66,7 @@
                                 >
                                     {!! view_render_event('bagisto.shop.checkout.onepage.payment-method.image.before') !!}
 
+                                    <template v-if="payment.image">
                                     <img
                                         class="max-h-11 max-w-14"
                                         :src="payment.image"
@@ -74,6 +75,8 @@
                                         :alt="payment.method_title"
                                         :title="payment.method_title"
                                     />
+                                </template>
+
 
                                     {!! view_render_event('bagisto.shop.checkout.onepage.payment-method.image.after') !!}
 

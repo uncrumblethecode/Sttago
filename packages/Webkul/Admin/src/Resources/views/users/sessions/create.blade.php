@@ -9,13 +9,13 @@
             <!-- Logo -->            
             @if ($logo = core()->getConfigData('general.design.admin_logo.logo_image'))
                 <img
-                    class="h-10 w-[110px]"
+                    class="h-16 w-32"
                     src="{{ Storage::url($logo) }}"
                     alt="{{ config('app.name') }}"
                 />
             @else
                 <img
-                    class="w-max" 
+                    class="h-16 w-32" 
                     src="{{ bagisto_asset('images/logo.svg') }}"
                     alt="{{ config('app.name') }}"
                 />
@@ -98,11 +98,11 @@
             </div>
 
             <!-- Powered By -->
-            <div class="text-sm font-normal">
-                @lang('admin::app.users.sessions.powered-by-description', [
-                    'bagisto' => '<a class="text-blue-600 hover:underline" href="https://bagisto.com/en/">Bagisto</a>',
-                    'webkul' => '<a class="text-blue-600 hover:underline" href="https://webkul.com/">Webkul</a>',
-                ])
+            <div class="mt-auto">
+                    <div class="border-t bg-white py-2 text-center text-xs sm:text-sm dark:border-gray-800 dark:bg-gray-900 dark:text-white">
+                        <span>Powered by <a class="text-blue-600 hover:underline" href="https://Sttago.com">Sttago</a></span>
+
+                    </div>
             </div>
         </div>
     </div>

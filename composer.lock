@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27dcf8864e0a3c2d435bdcc067255c61",
+    "content-hash": "7c6e7484a9114eba62c68e979b4fb913",
     "packages": [
         {
             "name": "astrotomic/laravel-translatable",
@@ -10509,6 +10509,51 @@
             "time": "2020-10-02T23:36:20+00:00"
         },
         {
+            "name": "vfixtechnology/bagisto-phonepe",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vfixtechnology/bagisto-phonepe.git",
+                "reference": "d32ab3ab0ad8a87de6af10f75fcc15a3b774c06b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vfixtechnology/bagisto-phonepe/zipball/d32ab3ab0ad8a87de6af10f75fcc15a3b774c06b",
+                "reference": "d32ab3ab0ad8a87de6af10f75fcc15a3b774c06b",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": [],
+                    "providers": [
+                        "Vfixtechnology\\Phonepe\\Providers\\PhonepeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vfixtechnology\\Phonepe\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arun chahar",
+                    "email": "info@vfixtechnology.com"
+                }
+            ],
+            "description": "Phonepe payment gateway for bagisto laravel open source ecommerce platform.",
+            "support": {
+                "issues": "https://github.com/vfixtechnology/bagisto-phonepe/issues",
+                "source": "https://github.com/vfixtechnology/bagisto-phonepe/tree/v1.0.3"
+            },
+            "time": "2025-06-18T02:46:33+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.6.1",
             "source": {
@@ -13895,6 +13940,6 @@
         "ext-pdo_mysql": "*",
         "ext-tokenizer": "*"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
