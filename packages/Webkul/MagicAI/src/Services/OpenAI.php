@@ -53,6 +53,10 @@ class OpenAI
      */
     public function images(array $options): array
     {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27992c36c9 (Removed OpenAI API key and switched to env variable)
         $result = BaseOpenAI::images()->create([
             'model'           => $this->model,
             'prompt'          => $this->prompt,
