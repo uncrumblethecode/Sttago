@@ -44,4 +44,5 @@ return [
     Webkul\Theme\Providers\ThemeServiceProvider::class,
     Webkul\User\Providers\UserServiceProvider::class,
     Vfixtechnology\Phonepe\Providers\PhonepeServiceProvider::class,
+    Wontonee\Razorpay\Providers\RazorpayServiceProvider::class, 
 ];

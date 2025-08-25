@@ -20,6 +20,7 @@
         "astrotomic/laravel-translatable": "^11.0.0",
         "bagisto/image-cache": "dev-master",
         "barryvdh/laravel-dompdf": "^2.0.0",
+        "codenteq/stripe-payment-gateway": "^1.5",
         "diglactic/laravel-breadcrumbs": "^9.0",
         "elasticsearch/elasticsearch": "^8.10",
         "enshrined/svg-sanitize": "^0.16.0",
@@ -45,7 +46,8 @@
         "shetabit/visitor": "^4.1",
         "spatie/laravel-responsecache": "^7.4",
         "spatie/laravel-sitemap": "^7.3",
-        "vfixtechnology/bagisto-phonepe": "^1.0"
+        "vfixtechnology/bagisto-phonepe": "^1.0",
+        "wontonee/razorpay": "^5.0"
     },
     "require-dev": {
         "bagisto/laravel-datafaker": "2.2.*",
